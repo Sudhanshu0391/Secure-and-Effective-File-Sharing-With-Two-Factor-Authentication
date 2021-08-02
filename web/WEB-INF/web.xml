@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>Db_register.register</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cloud_login</servlet-name>
+        <servlet-class>LoginAction.cloud_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>authority_login</servlet-name>
+        <servlet-class>LoginAction.authority_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>user_login</servlet-name>
+        <servlet-class>LoginAction.user_login</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>trustee_login</servlet-name>
+        <servlet-class>LoginAction.trustee_login</servlet-class>
+    </servlet>
+  <servlet>
+        <servlet-name>Upload</servlet-name>
+        <servlet-class>FileUpload.Upload</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>FileDownload.download</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>cloud_login</servlet-name>
+        <url-pattern>/cloud_login</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>authority_login</servlet-name>
+        <url-pattern>/authority_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>user_login</servlet-name>
+        <url-pattern>/user_login</url-pattern>
+    </servlet-mapping>    
+     <servlet-mapping>
+        <servlet-name>trustee_login</servlet-name>
+        <url-pattern>/trustee_login</url-pattern>
+    </servlet-mapping>    
+          
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>Upload</servlet-name>
+        <url-pattern>/Upload</url-pattern>
+    </servlet-mapping>
+   
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
